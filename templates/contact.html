@@ -1,4 +1,34 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% block content %}
+<div class="form-group">
+  <label for="firstname"> First Name </label>
+  <input type="fname" class="form-control" id="firstname" placeholder="Enter
+  First name here"
+</div>
 
-{% block content %}
-{% endblock %}
+<div class="form-group">
+  <label for="lastname"> Last Name </label>
+  <input type="lname" class="form-control" id="lastname" placeholder="Enter Last
+  name here"
+</div>
+
+<div class="form-group">
+  <label for="emailadress"> Email Address</label>
+  <input type="email" class="form-control" id="emailadress" placeholder="Enter
+  Email here"
+</div>
+
+<div class="form-group">
+  <label for="options"> Choose option at what message you want to send </label>
+  <select class="form-control" id="options">
+    <option>New Experiment Idea</option>
+    <option>Feedback</option>
+    <option>Complaint</option>
+    <option>Other</option>
+
+    <div class="form-group">
+      <label for="textarea"> Text </label>
+      <textarea class="form-control" id="textarea" rows="5"></textarea>
+    </div>
+    {% endblock %}
+  </select>
+</div>

@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
@@ -9,6 +9,10 @@ def index():
 @app.route("/contact")
 def contact():
   return render_template("contact.html")
+
+@app.route("/experiments")
+def experiments():
+  return render_template("experiments.html")
 
 if __name__=="__main__":
   app.run(debug=True)

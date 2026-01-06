@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,27 +15,37 @@
     <title>DIY chemistry at home</title>
     <link rel="icon" type="image/x-icon" href="../static/img/favicon.png">
 
-     <link rel="stylesheet" href="../static/CSS/index.css" />
+     <link rel="stylesheet" href="{{url_for('static', filename='css/index.css' )}}" />
+
+     {% block head%}{%endblock%}
   </head>
   <body>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
 
-  <div class="container">
+  <div class="content">
     <ul>
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="experiments.html"> Experiments</a></li>
-      <li><a href="contact.html"> Contact </a></li>
+      <!-- Icoontje toevoegen aan de header -->
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="../static/img/favicon.png" width="30" height="30"  class="d-inline-block align-top"    alt=""> DIY Chemistry at home  
+        </a>
+        </nav>
+      <li><a class="active" href="{{url_for('index')}}">Home</a></li>
+      <li><a href="{{url_for('experiments')}}"> Experiments</a></li>
+      <li><a href="{{url_for('contact') }}"> Contact </a></li>
     </ul>
 
     <nav> 
-      <a href=""> Periodic Table</a>
-      <a href=" "> What is Chemistry</a>
-      <a href=""> Organic Chemistry</a>
+      <a href="#"> Periodic Table</a>
+      <a href="#"> What is Chemistry</a>
+      <a href="#"> Organic Chemistry</a>
+
+    {% block content %}{%endblock%}
+    
+    </div>
 
 
     </nav>
-
     <footer class="footer"> <h6> &copy; Serena </h6> </footer>
 
 
