@@ -1,0 +1,50 @@
+body {
+  background: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  background-color: white;
+  width: 1140px;
+  margin: auto;
+  min-height: 100vh;
+  flex-direction: column;
+  max-width: 1140px;
+
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lavender;
+  position: sticky;
+  top: 0;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display:block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: lightskyblue;
+}
+
+.footer {
+padding: 20px;
+background-color: lavender;
+text-align: center;
+
+
+}
