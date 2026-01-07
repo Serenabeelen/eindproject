@@ -3,26 +3,49 @@
 <h1>Welcome to this awesome Do It Yourself (DIY) chemistry website</h1>
 <h4>
   There are three DIY categories you can choose from shown below. Choose what
-  you desire! You can give feedback in the contact form or give more ideas to put on to the website!
+  you desire! You can give feedback in the contact form or give more ideas to
+  put on to the website!
 </h4>
 
- <div class="container" >
-      <div class="row">
-        <div class="col">
-
-          <img src="../static/img/food.png" alt="food"  height="200px" width="200px">
-          Food experiments
-        </div>
-        <div class = "col">
-          <img src="../static/img/cosmetics.png" alt="cosmetics" height="200px" width="200px">
-          Cosmetics experiments 
-        </div>
-        <div class="col">
-          <img src="../static/img/fun.avif" alt="funny"  height="200px" width="200px">
-          Cosmetics experiments 
-        </div>
-      </div>
+<div class="container">
+  <div class="row">
+    <div class="col text-center">
+      <a href="{{url_for('food')}}">
+      <img
+        src="../static/img/food.png"
+        alt="food"
+        height="200px"
+        width="200px"
+        class="d-block mx-auto mb-2"
+      />
+    </a>
+      <p></p>Food experiments </p>
     </div>
-
+    <div class="col text-center">
+      <a href="{{url_for('cosmetics')}}">
+      <img
+        src="../static/img/cosmetics.png"
+        alt="cosmetics"
+        height="200px"
+        width="200px"
+        class="d-block mx-auto mb-2"
+      />
+      </a>
+      <p>Cosmetics experiments</p>
+    </div>
+    <div class="col text-center">
+      <a href="{{url_for('fun')}}">
+      <img
+        src="../static/img/fun.avif"
+        alt="funny"
+        height="200px"
+        width="200px"
+        class="d-block mx-auto mb-2"
+      />
+      </a>
+      <p> Fun experiments</p>
+    </div>
+  </div>
+</div>
 
 {% endblock %}

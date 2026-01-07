@@ -1,34 +1,48 @@
-{% extends "base.html" %} {% block content %}
-<div class="form-group">
-  <label for="firstname"> First Name </label>
-  <input type="fname" class="form-control" id="firstname" placeholder="Enter
-  First name here"
-</div>
+{% extends "base.html" %} 
 
-<div class="form-group">
-  <label for="lastname"> Last Name </label>
-  <input type="lname" class="form-control" id="lastname" placeholder="Enter Last
-  name here"
-</div>
+{% block content %}
+<div class="container-sm mt-4">
+  <form method="POST">
 
-<div class="form-group">
-  <label for="emailadress"> Email Address</label>
-  <input type="email" class="form-control" id="emailadress" placeholder="Enter
-  Email here"
-</div>
-
-<div class="form-group">
-  <label for="options"> Choose option at what message you want to send </label>
-  <select class="form-control" id="options">
-    <option>New Experiment Idea</option>
-    <option>Feedback</option>
-    <option>Complaint</option>
-    <option>Other</option>
-
-    <div class="form-group">
-      <label for="textarea"> Text </label>
-      <textarea class="form-control" id="textarea" rows="5"></textarea>
+    <div class="form-group mb-3">
+      <label> First Name </label>
+      <input type="text" class="form-control" name="firstname" placeholder="Enter
+      First name here"required> 
     </div>
-    {% endblock %}
-  </select>
+
+  <div class="form-group">
+    <label for="lastname"> Last Name </label>
+    <input type="lname" class="form-control" id="lastname" placeholder="Enter
+    Last name here">
+  </div>
+
+  <div class="form-group">
+    <label for="emailadress"> Email Address</label>
+    <input type="email" class="form-control" id="emailadress" placeholder="Enter
+    Email here">
+  </div>
+
+  <div class="form-group">
+    <label for="options">
+      Choose option at what message you want to send
+    </label>
+    <select class="form-control" id="options">
+      <option>New Experiment Idea</option>
+      <option>Feedback</option>
+      <option>Complaint</option>
+      <option>Other</option>
+
+      <div class="form-group p-2">
+        <label for="textarea"> Text </label>
+        <textarea class="form-control" id="textarea" rows="3"></textarea>
+      </div>
+
+      <div class="container d-grid gap-3" style="grid-template-columns: 1fr 1fr;" > 
+        <input type="submit" class="btn btn-info" value="Submit">
+
+      </div>
+    </select>
+  </div>
 </div>
+
+{% endblock %}

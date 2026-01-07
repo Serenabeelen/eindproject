@@ -1,0 +1,46 @@
+{% extends "base.html" %} 
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col text-center">
+      <a href="{{url_for('bathbomb')}}">
+      <img
+        src="../static/img/bathbombs.jpg"
+        alt="bathbomb"
+        height="200px"
+        width="200px"
+        class="d-block mx-auto mb-2"
+      />
+    </a>
+      <p></p> Bathbombs </p>
+    </div>
+    <div class="col text-center">
+      <a href="{{url_for('soap')}}">
+      <img
+        src="../static/img/soap.webp"
+        alt="cosmetics"
+        height="200px"
+        width="200px"
+        class="d-block mx-auto mb-2"
+      />
+      </a>
+      <p>DIY Soap</p>
+    </div>
+    <div class="col text-center">
+      <a href="{{url_for('fun')}}">
+      <img
+        src="../static/img/scrubs.webp"
+        alt="funny"
+        height="200px"
+        width="200px"
+        class="d-block mx-auto mb-2"
+      />
+      </a>
+      <p> scrubs </p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
