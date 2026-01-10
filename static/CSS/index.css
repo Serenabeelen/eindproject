@@ -5,15 +5,14 @@ body {
 }
 
 .content {
-  display: flex;
+  /* display: flex; */
   background-color: white;
-  width: 1140px;
-  margin: auto;
+  /* width: 1140px;
+  margin: auto; */
   min-height: 100vh;
-  flex-direction: column;
-  max-width: 1140px;
-
-
+  /* flex-direction: column;
+  max-width: 1140px; */
+  margin-top: 56px;
 }
 
 ul {
@@ -31,7 +30,7 @@ ul li {
 }
 
 ul li a {
-  display:block;
+  display: block;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -42,9 +41,25 @@ ul li a:hover {
 }
 
 .footer {
-padding: 20px;
-background-color: lavender;
-text-align: center;
+  padding: 20px;
+  background-color: lavender;
+  text-align: center;
+}
 
+/*
+Source - https://stackoverflow.com/a
+Posted by Brandon Walton, modified by community. See post 'Timeline' for change history
+Retrieved 2026-01-10, License - CC BY-SA 4.0
+*/
 
+.carousel .carousel-item {
+  height: 500px;
+}
+
+.carousel-item img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 500px;
 }
