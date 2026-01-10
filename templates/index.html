@@ -1,52 +1,44 @@
 {% extends "base.html" %} {% block content %}
 
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<h1> Welcome to DIY Chemistry at home</h1>
+
+  <p> Are you ready to delve into the depths of simple chemistry? Look no further than DIY Chemistry, where you can take pride in making your stuff at home. There are three categories you can choose from. Each category has it's own fun experiments. 
+     If you want to contact us, simply fill in the contact form. </p>
+
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img
-        class="d-block w-100 "
-        src="../static/img/c1.jpg"
-        alt="First slide"
-      />
+      <img src="../static/img/c1.jpg" alt="c1" class="d-block" style="width:100%">
     </div>
     <div class="carousel-item">
-      <img
-        class="d-block w-100 "
-        src="../static/img/c2.png"
-        alt="Second slide"
-      />
+      <img src="../static/img/c2.png" alt="c2" class="d-block" style="width:100%">
     </div>
     <div class="carousel-item">
-      <img
-        class="d-block w-100 "
-        src="../static/img/c3.jpg"
-        alt="Third slide"
-      />
+      <img src="../static/img/c3.webp" alt="c3" class="d-block" style="width:100%">
     </div>
   </div>
-  <a
-    class="carousel-control-prev"
-    href="#carouselExampleControls"
-    role="button"
-    data-slide="prev"
-  >
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a
-    class="carousel-control-next"
-    href="#carouselExampleControls"
-    role="button"
-    data-slide="next"
-  >
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
 </div>
 
+
 <!-- 
-https://getbootstrap.com/docs/4.0/components/carousel/
-https://stackoverflow.com/questions/28589911/bootstrap-change-carousel-height 
+https://www.w3schools.com/bootstrap5/bootstrap_carousel.php
 -->
 
 {% endblock %}
