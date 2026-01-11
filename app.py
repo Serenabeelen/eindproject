@@ -1,10 +1,13 @@
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
+import os
 
 app = Flask(__name__)
 
+basedir = os.path.abspath(os.path.dirname(__file__))
+
 #configure SQlite database
-app.config["SQLALCHEMY_DATABASE_URI"] ="sqlite:///contactform.db"
+app.config["SQLALCHEMY_DATABASE_URI"] ="sqlite:///" + os.path.join(basedir, "contactform.db")
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False #avoids a warning 
 
 #creates SQLALchemy instance 
@@ -15,7 +18,7 @@ class Contact(db.Model):
   id= db.Column(db.Integer, primary_key=True)
   first_name = db.Column(db.String(20), unique=False, nullable=False)
   last_name = db.Column(db.String(20), unique=False, nullable=False )
-  email = db.Column(db.String(20), unique=False, nullable=False )
+  email = db.Column(db.String(50), unique=False, nullable=False )
   message = db.Column(db.String(300), unique=False, nullable=False )
   category = db.Column(db.String(20), unique=False, nullable=False )
 
@@ -63,6 +66,58 @@ def food():
 @app.route("/fun")
 def fun():
   return render_template("fun.html")
+
+@app.route("/bathbomb")
+def bathbomb():
+  return render_template("bathbomb.html")
+
+@app.route("/soap")
+def soap():
+  return render_template("soap.html")
+
+@app.route("/scrub")
+def scrub():
+  return render_template("scrub.html")
+
+@app.route("/crystals")
+def crystals():
+  return render_template("crystals.html")
+
+
+@app.route("/hotice")
+def hotice():
+  return render_template("hotice.html")
+
+
+@app.route("/elephanttoothpaste")
+def elephanttoothpaste():
+  return render_template("elephanttoothpaste.html")
+
+
+@app.route("/icecream")
+def icecream():
+  return render_template("icecream.html")
+
+
+@app.route("/lavalamp")
+def lavalamp():
+  return render_template("lavalamp.html")
+
+
+@app.route("/strawberrydna")
+def strawberrydna():
+  return render_template("strawberrydna.html")
+
+@app.route("/poppingboba")
+def poppingboba():
+  return render_template("poppingboba.html")
+
+
+@app.route("/instantslushie")
+def instantslushie():
+  return render_template("instantslushie.html")
+
+
 
 if __name__=="__main__":
   with app.app_context(): #needed for DB operations 
