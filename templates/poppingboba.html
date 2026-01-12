@@ -1,6 +1,186 @@
-{% extends "base.html" %} 
+{% extends "base.html" %} {% block content %}
 
-{% block content %}
+<div class="container-fluid p-0">
+  <div class="container p-0">
+    <img
+      src="../static/img/bobaimg.jpg"
+      class="img-fluid w-100"
+      alt="imgboba"
+      style="height: 25vh; object-fit: cover"
+    />
 
+    <h1
+      style="
+        text-align: center;
+        font-family: serif;
+        background-color: lavender;
+        color: black;
+      "
+    >
+      How to make popping boba at home
+    </h1>
+  </div>
+</div>
+<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-6 col-md-4" style="background-color: lavender">
+      <p style="text-align: center">&#9202; 4 hours and 30 minutes</p>
+      <h2
+        style="
+          text-align: center;
+          font-family: serif;
+          text-decoration: underline;
+          text-underline-offset: 10px;
+          text-decoration-thickness: 1 px;
+        "
+      >
+        Ingrediënts
+      </h2>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          200ml lemonade or beverage of your choice(not fizzy)
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkDefault"
+        />
+        <label class="form-check-label" for="checkDefault"> 1L water </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          3 grams
+          <a
+            href="https://www.amazon.nl/-/en/SaporePuro-Sodium-Alginate-Powder-100g/dp/B09GG926TR"
+            >sodium alginate powder</a
+          >
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          30 grams
+          <a
+            href="https://www.amazon.nl/-/en/Saporepuro-Calcium-lactate-powder-250g/dp/B08HM1JXWK?crid=1EERWOZDIPWCL&dib=eyJ2IjoiMSJ9.s0sAtv6sKSeCy_gxyGlve6bR71C1gb4pji7f1ectLtbpGXLAKCj7-Z5RilopKRIb_EUKQ-RHcOswhlI6dHix_CO14DpJ67aY4bXceLytD66j6SeaYWeiUU2TZZPLPvEFHn7qaG2AGKRKmMnL7KOb-SBR5J-elXnZfK4ZaZsCDFJkU4VK5f7JVqihMg3SsgAlOGHnpDTrYyFlUYI9wSqNiaBVz0koszclg4-HDSf07zAo0tvXG_D8FwQy0xsaCyPgIJZmtEDslk2Ww1KIiGHizysFcGR3g-TXAZ58oCf2E5E.yD3dgs6oUoiuBq_VN-BHxoFM26OG9ZtjlmHmxoZfTxI&dib_tag=se&keywords=calcium+lactate+powder&qid=1768226629&sprefix=calcium+lactate+powde%2Caps%2C152&sr=8-2"
+          >
+            calciumlactate powder
+          </a>
+        </label>
+      </div>
+
+      <h4
+        class="mt-4"
+        style="
+          text-align: center;
+          font-family: serif;
+          text-decoration: underline;
+          text-underline-offset: 10px;
+          text-decoration-thickness: 1 px;
+        "
+      >
+        Equipment
+      </h4>
+
+      <div class="form-check gap-3">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          Blender or mixer
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkDefault"
+        />
+        <label class="form-check-label" for="checkDefault"> Syringe </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          2x large bowls
+        </label>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <h4><b> What is boba? </b></h4>
+      <p>
+        Popping boba are little balls filled with liquid. When you bite into
+        them they burst. It is used in various drinks like bubble tea. You can
+        make them in every flavour you desire. When mixed with a lemonade or
+        other beverage the flavors combine when you bite into them.
+      </p>
+
+      <h4><b> Scientific explanation </b></h4>
+      <p>
+        THe sodium ions attached to the alginate will be replaced with calcium
+        ions. Creating a gelatinous outerlayer when it comes in contact with the
+        calciumalginate
+      </p>
+      <img src="../static/img/bobareaction.png" />
+
+      <h4><b> Instructions </b></h4>
+      <p class="p-0">
+        <b>1.</b> Add the sodium alginate to the lemonade or other drink
+        (optional: 1 drop of foodcoloring), mix and let the powder completely
+        dissolve. Set aside for at least 4 hours or overnight
+        <br class="mb-1" />
+        <b>2.</b> In a bowl add the calciumlactate and cold water
+        <br class="mb-1" />
+        <b>3.</b> Use a dropper and place drops of the lemonade/sodium solution
+        into the calciumlactate water. You will get round little balls.
+        <br class="mb-1" />
+        <b>4.</b> Use a strainer to remove the boba after 1 minute and rinse
+        them with water. <br class="mb-1" />
+
+        <b> 5. </b> Add the boba to your favorite drink and enjoy!
+      </p>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
+
+<!-- https://www.chinasichuanfood.com/how-to-make-popping-boba-at-home/-->
+ 

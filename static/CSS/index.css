@@ -2,7 +2,6 @@ body {
   background: url(../img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .content {
@@ -66,5 +65,16 @@ Retrieved 2026-01-10, License - CC BY-SA 4.0
 
 .container {
   background-color: white;
-
 }
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.btn-primary {
+  background-color: lavender;
+  border-color: lavender;
+  color: black;
+}
+ 

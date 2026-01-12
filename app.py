@@ -117,7 +117,9 @@ def poppingboba():
 def instantslushie():
   return render_template("instantslushie.html")
 
-
+@app.route("/dishwashertabs")
+def dishwashertabs():
+  return render_template("diswashertabs.html")
 
 if __name__=="__main__":
   with app.app_context(): #needed for DB operations 
