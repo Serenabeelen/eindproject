@@ -77,4 +77,7 @@ Retrieved 2026-01-10, License - CC BY-SA 4.0
   border-color: lavender;
   color: black;
 }
- 
+
+.science-img {
+  max-height: 500px;
+}

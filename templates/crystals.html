@@ -1,6 +1,202 @@
-{% extends "base.html" %} 
+{% extends "base.html" %} {% block content %}
+<div class="container-fluid p-0">
+  <div class="container p-0">
+    <img
+      src="../static/img/rocksugarcrystalsticks.jpg"
+      class="img-fluid w-100"
+      alt="imgboba"
+      style="height: 25vh; object-fit: cover"
+    />
 
-{% block content %}
+    <h1
+      style="
+        text-align: center;
+        font-family: serif;
+        background-color: lavender;
+        color: black;
+      "
+    >
+      How to make rocksugar crystals
+    </h1>
+  </div>
+</div>
+<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-6 col-md-4" style="background-color: lavender">
+      <p style="text-align: center">&#9202; 1 to 2 weeks</p>
 
+      <h2
+        style="
+          text-align: center;
+          font-family: serif;
+          text-decoration: underline;
+          text-underline-offset: 10px;
+          text-decoration-thickness: 1 px;
+        "
+      >
+        Ingrediënts
+      </h2>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          600 gram granulated sugar
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkDefault"
+        />
+        <label class="form-check-label" for="checkDefault"> 240ml water </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          Food coloring
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          Food flavoring(optional )
+        </label>
+      </div>
+
+      <h4
+        class="mt-4"
+        style="
+          text-align: center;
+          font-family: serif;
+          text-decoration: underline;
+          text-underline-offset: 10px;
+          text-decoration-thickness: 1 px;
+        "
+      >
+        Equipment
+      </h4>
+
+      <div class="form-check gap-3">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          Wooden skewers/sticks
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          clothes pegs
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          Cylinder shaped jars or glasses
+        </label>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <h4><b> What is are rocksugar crystals? </b></h4>
+      <p>
+        Rock candy, is literally sugarcrystals on a stick. <br />
+        Rocksugar crystals or rock candy is formed by a super saturated sugar
+        solution to crystallize onto a surface suitable for crystal nucleation.
+      </p>
+
+      <h4><b> Scientific explanation </b></h4>
+      <p>
+        The crystallization process consists of two steps: nucleation and
+        crystalgrowth. During crystallization sugaratoms bind together with well
+        defined angles to form a characteristic crystal shape with smooth
+        surfaces and facets <br class="mb-1" />
+        <b>
+          Nucleationstep (the initial process in crystal formation from a
+          solution, liquid, or vapor ):
+        </b>
+        <br />
+        Sugarmolecules dispersed in water start to gather into cluster, on
+        microscopic scale. <br />
+        <b>Crystal growth: </b> From the from the nucleus, sugarmolecules
+        arrange into a highly ordered, solid crystalline structure, forming the
+        rock sugar attached to the sticks.
+      </p>
+      <img
+        src="../static/img/crystal forming.jpg"
+        class="img-fluid science-img"
+        alt="reaction"
+      />
+
+      <h4><b> Instructions </b></h4>
+      <p class="p-0">
+        <b>1.</b> Bring water to a boil (100 &#8451)
+        <br class="mb-1" />
+        <b>2.</b> Add half of the sugar, when it's dissolved add the other half and let it dissolve
+        <br class="mb-1" />
+        <b>3.</b> Allow sugarmixture to cool for 15 minutes
+        <br class="mb-1" />
+        <b>4.</b> When the sugarmixture is cooling wet your sticks with water and cover them in sugar. This will allow the sugarmolecules to stick on the woodenstick. 
+        <br class="mb-1" />
+        <b>5.</b> Add a few drops of foodcoloring and flavoring (both optional) to each glass.   <br class="mb-1" />
+
+        <b> 6. </b>  Add the sugarsolution to each glass and stir. 
+        <br class="mb-1" />
+        <b> 7. </b> Stick the sugared sticks in place a peg on top of each and place into the glass. 
+        <b> 8. </b>  Wait for 1 to 2 weeks. After 2-3 days your sugarcrystals will grow. 
+        <br class="mb-1" />
+        <b> 9. </b> Gently break the top with a sharp object. Remove skewer and hang upside down until the excess liquid drips off and it dries. 
+        <br class="mb-1" />
+
+        <b> 9. </b> Enjoy eating them or you can also use them as decoration! 
+
+      </p>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
+
+<!--https://cookiescupcakesandcardio.co/?p=5929
+ -->
