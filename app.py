@@ -121,6 +121,10 @@ def instantslushie():
 def dishwashertabs():
   return render_template("dishwashertabs.html")
 
+@app.route("/slime")
+def slime():
+  return render_template("slime.html")
+
 if __name__=="__main__":
   with app.app_context(): #needed for DB operations 
     db.create_all() #creates the database and tables 
