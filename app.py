@@ -125,6 +125,10 @@ def dishwashertabs():
 def slime():
   return render_template("slime.html")
 
+@app.route("/compass")
+def compass():
+  return render_template("compass.html")
+
 if __name__=="__main__":
   with app.app_context(): #needed for DB operations 
     db.create_all() #creates the database and tables 

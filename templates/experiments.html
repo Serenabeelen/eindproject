@@ -1,6 +1,4 @@
-{% extends "base.html" %}
-
-{% block content %}
+{% extends "base.html" %} {% block content %}
 
 <h1>Welcome to this awesome Do It Yourself (DIY) chemistry website</h1>
 <h4>
@@ -9,45 +7,57 @@
   put on to the website!
 </h4>
 
-<div class="container mt-5">
-  <div class="row">
-    <div class="col text-center">
-      <a href="{{url_for('food')}}">
-      <img
-        src="../static/img/food.png"
-        alt="food"
-        height="200px"
-        width="200px"
-        class="d-block mx-auto mb-2"
-      />
-    </a>
-      <p></p>Food experiments </p>
+<!-- 1st row of experiments -->
+<div class="row row-cols-1 row-cols-md3 g-3">
+  <div class="col-sm-4 d-flex align-items-stretch">
+    <div class="card h-100 d-flex flex-column w-100">
+      <img src="../static/img/food.png" alt="icecream" class="card-img-top" />
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title">Food Experiments</h5>
+        <p class="card-text">
+          This category will show you all the food related experiments there
+          are, pick your poison!
+        </p>
+        <a href="{{url_for('food')}}" class="btn btn-primary mt-auto"
+          >Go to category</a
+        >
+      </div>
     </div>
-    <div class="col text-center">
-      <a href="{{url_for('cosmetics')}}">
+  </div>
+  <div class="col-sm-4 d-flex align-items-stretch">
+    <div class="card h-100 d-flex flex-column w-100">
+      <img src="../static/img/fun.avif" alt="fun" class="card-img-top" />
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title">Fun Experiments</h5>
+        <p class="card-text">
+          Do you like to learn a more about basic chemistry with fun
+          experiments? Go to this category.
+        </p>
+        <a href="{{url_for('fun')}}" class="btn btn-primary mt-auto"
+          >Go to category
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4 d-flex align-items-stretch">
+    <div class="card h-100 d-flex flex-column w-100">
       <img
         src="../static/img/cosmetics.png"
         alt="cosmetics"
-        height="200px"
-        width="200px"
-        class="d-block mx-auto mb-2"
+        class="card-img-top"
       />
-      </a>
-      <p>Cosmetics experiments</p>
-    </div>
-    <div class="col text-center">
-      <a href="{{url_for('fun')}}">
-      <img
-        src="../static/img/fun.avif"
-        alt="funny"
-        height="200px"
-        width="200px"
-        class="d-block mx-auto mb-2"
-      />
-      </a>
-      <p> Fun experiments</p>
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title">Cosmetic experiments</h5>
+        <p class="card-text">
+          Make your own cosmetics which is good for the enviroment and fun to
+          make!
+        </p>
+        <a href="{{url_for('cosmetics')}}" class="btn btn-primary mt-auto"
+          >Go to category
+        </a>
+      </div>
     </div>
   </div>
 </div>
-
-{% endblock %}
+` {% endblock %}

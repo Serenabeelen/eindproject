@@ -1,0 +1,179 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="container-fluid p-0">
+  <div class="container p-0">
+    <img
+      src="../static/img/comp.jpg"
+      class="img-fluid w-100"
+      alt="imgboba"
+      style="height: 25vh; object-fit: cover"
+    />
+
+    <h1
+      style="
+        text-align: center;
+        font-family: serif;
+        background-color: lavender;
+        color: black;
+      "
+    >
+      How to make a compass
+    </h1>
+  </div>
+</div>
+<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-6 col-md-4" style="background-color: lavender">
+      <p style="text-align: center">&#9202; 20minutes</p>
+
+      <h2
+        style="
+          text-align: center;
+          font-family: serif;
+          text-decoration: underline;
+          text-underline-offset: 10px;
+          text-decoration-thickness: 1 px;
+        "
+      >
+        Ingrediënts
+      </h2>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked"> Water </label>
+      </div>
+
+      <h4
+        class="mt-4"
+        style="
+          text-align: center;
+          font-family: serif;
+          text-decoration: underline;
+          text-underline-offset: 10px;
+          text-decoration-thickness: 1 px;
+        "
+      >
+        Equipment
+      </h4>
+
+      <div class="form-check gap-3">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          Sewing needle
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          Small bar magnet or refrigerator magnets
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          Piece of foam or cork
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked"> Scissors </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked"> Small bowl </label>
+      </div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          real compass
+        </label>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <h4><b> What is a compass </b></h4>
+      <p>
+        A compass is a tool that helps us follow direction to north, east, south
+        and west. North is the direction that points to the northphole.
+
+        <br class="mb-1" />
+      </p>
+
+      <h4><b> Scientific explanation </b></h4>
+      Earth is a giant magnet and the compass is a free smaller magnet, so the
+      magnet needle on a compass always points towards the North pole. So
+      basically the spinning magnet aligns itself it Earth's magnetic field.
+      <p></p>
+      <img
+        src="../static/img/magnetic field.jpg"
+        class="img-fluid science-img"
+        alt="magnetic field"
+      />
+
+      <h4><b> Instructions </b></h4>
+      <p class="p-0">
+        <b>1.</b> Cut your cork with a knife so it's about 2cm thick.
+        <br class="mb-1" />
+        <b>2.</b> Rub needle against a magnet in the same direction for 20
+        times.
+        <br class="mb-1" />
+        <b>3.</b> Stick needle all the way through your cork or foam
+        <br class="mb-1" />
+        <b>4.</b> Fill the bowl with water and place cork with needle in the
+        bowl
+        <br class="mb-1" />
+        <b>5.</b> Place your compass next to the bowl and mark where north,
+        east, west and south is. One needle end should point towards the
+        Northpole and the other end points South. <br class="mb-1" />
+      </p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
