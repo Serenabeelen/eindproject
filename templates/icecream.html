@@ -1,9 +1,180 @@
-{% extends "base.html" %} 
+{% extends "base.html" %} {% block content %}
 
-{% block content %}
+<div class="container-fluid p-0">
+  <div class="container p-0">
+    <img
+      src="../static/img/icecream.jpg"
+      class="img-fluid w-100"
+      alt="icecream"
+      style="height: 25vh; object-fit: cover"
+    />
 
-<h1> Icecream</h1>
+    <h1
+      style="
+        text-align: center;
+        font-family: serif;
+        background-color: lavender;
+        color: black;
+      "
+    >
+      Icecream
+    </h1>
+  </div>
+</div>
+<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-6 col-md-4" style="background-color: lavender">
+      <p style="text-align: center">&#9202; 30minutes</p>
 
+      <h2
+        style="
+          text-align: center;
+          font-family: serif;
+          text-decoration: underline;
+          text-underline-offset: 10px;
+          text-decoration-thickness: 1 px;
+        "
+      >
+        Ingrediënts
+      </h2>
 
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          500ml Heavy cream
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          50 grams sugar
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          1 teaspoon vanilla extract
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          100 grams salt
+        </label>
+      </div>
+
+      <h4
+        class="mt-4"
+        style="
+          text-align: center;
+          font-family: serif;
+          text-decoration: underline;
+          text-underline-offset: 10px;
+          text-decoration-thickness: 1 px;
+        "
+      >
+        Equipment
+      </h4>
+
+      <div class="form-check gap-3">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          1 large ziploc bag
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          1 smaller Zip loc bag
+        </label>
+      </div>
+
+      <img src="../static/img/science gif.gif" class="img-fluid" alt="gif" />
+    </div>
+
+    <div class="col-md-8">
+      <h4><b> Icecream in a bag </b></h4>
+      <p>
+        Do you like fresh icecream and do you not want to buy an expensive
+        icecream maker? This recipe is for you! With a bit of science you can
+        make delicious icecream at home with just a few ingrediënts and you can
+        add whatever toppings you like!
+      </p>
+
+      <h4><b> Scientific explanation </b></h4>
+      <p>
+        Ice is about 0&#8451; which is the freezingpoint of water. Salt has a
+        lower meltingpoint. When you mix salt and ice with each other the
+        temperature is much lower than 0&#8451;. The temperature will be closer
+        to -20&#8451;. This allows you to make icecream in about 15 minutes! It
+        will also give you a great armworkout so you don't feel bad about eating
+        the icecream afterwards &#128521;
+      </p>
+      <img
+        src="../static/img/saltice.webp"
+        class="img-fluid science-img"
+        alt="reaction"
+      />
+
+      <h4><b> Instructions </b></h4>
+      <p class="p-0">
+        <b>1.</b> Mix cream, sugar, vanilla extract and toppings inside a large
+        ziploc bag. Seal the bag pressing as much air out as you can
+        <br class="mb-1" />
+        <b>2.</b> In a different bag add the ice and salt and mix.
+        <br class="mb-1" />
+        <b>3.</b> Add the ziplog bag with icecream mixture inside the ice/salt
+        bag. Seal the bag pressing as much air out as you can.
+        <br class="mb-1" />
+        <b>4.</b> Shake the bag for 5-15 minutes until you have an icecream
+        consistency.
+        <br class="mb-1" />
+        <b>5.</b> Take the bag out of the ice/salt bag and transfer the contents
+        of the icecream into a container to enjoy!
+      </p>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
