@@ -119,7 +119,7 @@ def instantslushie():
 
 @app.route("/dishwashertabs")
 def dishwashertabs():
-  return render_template("diswashertabs.html")
+  return render_template("dishwashertabs.html")
 
 if __name__=="__main__":
   with app.app_context(): #needed for DB operations 
