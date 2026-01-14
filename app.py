@@ -129,6 +129,23 @@ def slime():
 def compass():
   return render_template("compass.html")
 
+@app.route("/mozarella")
+def mozarella():
+  return render_template("mozarella.html")
+
+@app.route("/mayo")
+def mayo():
+  return render_template("mayo.html")
+
+@app.route("/facemask")
+def facemask():
+  return render_template("facemask.html")
+
+
+@app.route("/essentialoil")
+def essentialoil():
+  return render_template("essentialoil.html")
+
 if __name__=="__main__":
   with app.app_context(): #needed for DB operations 
     db.create_all() #creates the database and tables 

@@ -1,6 +1,170 @@
-{% extends "base.html" %} 
+{% extends "base.html" %} {% block content %}
 
-{% block content %}
+<div class="container-fluid p-0">
+  <div class="container p-0">
+    <img
+      src="../static/img/lavba.jpg"
+      class="img-fluid w-100"
+      alt="imgboba"
+      style="height: 25vh; object-fit: cover"
+    />
 
+    <h1
+      style="
+        text-align: center;
+        font-family: serif;
+        background-color: lavender;
+        color: black;
+      "
+    >
+      Lavalamp
+    </h1>
+  </div>
+</div>
+<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<div class="container mt-4 position-sticky">
+  <div class="row">
+    <div class="col-6 col-md-4" style="background-color: lavender">
+      <p style="text-align: center">&#9202; 30minutes</p>
 
-{% endblock %}
+      <h2
+        style="
+          text-align: center;
+          font-family: serif;
+          text-decoration: underline;
+          text-underline-offset: 10px;
+          text-decoration-thickness: 1 px;
+        "
+      >
+        Ingrediënts
+      </h2>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked"> Water </label>
+      </div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          Sunfloweroil
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked"> Food dye </label>
+      </div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          Vitamin C effervescent tablet
+        </label>
+      </div>
+
+      <h4
+        class="mt-4"
+        style="
+          text-align: center;
+          font-family: serif;
+          text-decoration: underline;
+          text-underline-offset: 10px;
+          text-decoration-thickness: 1 px;
+        "
+      >
+        Equipment
+      </h4>
+
+      <div class="form-check gap-3">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          Bottle or vase
+        </label>
+      </div>
+    </div>
+
+      <div class="col-md-8">
+        <h4><b> What is a lavalamp </b></h4>
+        <p>
+          Edward Craven Walker a britisch entrepreneur invented a decorative
+          lamp called a lava lamp in 1963. They consists of a clear transluscent
+          liquid with wax in a glass vessel. The clear translucent liquid used
+          was tetrachloride, but has not been used since 1970. Tetrachloride is
+          banned due to toxicity. What they use now as liquid is a trade secret
+          but some sources only say they add mineral oil, water and other
+          chemicals to change the density of the liquid.
+
+          <br class="mb-1" />
+          Fun fact: The company Cloudfare uses the unpredictable movements of
+          lavalamps to use as the foundation of encryptionkeys. Protecting a
+          massive portion of the internet!
+        </p>
+
+        <h4><b> Scientific explanation </b></h4>
+        <p>
+          A lavalamp has wax and a liquid (probably water, and preservatives).
+          The wax when heated expands and becomes less dense. The melted wax
+          rises, causing blobs to ascend to the top of the lamp. A metallic wire
+          coil in the bottle's base breaks the cooled blobs surface tension,
+          allowing them to merge and repeat the cycle.
+        </p>
+        <img
+          src="../static/img/lavalamp gif.gif"
+          class="img-fluid science-img"
+          alt="lavalamp"
+        />
+
+        <h4><b> Instructions </b></h4>
+        <p class="p-0">
+          <b>1.</b> Add for 1/4th of water into your bottle with a few drops of
+          foodcoloring.
+          <br class="mb-1" />
+          <b>2.</b> Fill the remaining space with sunfloweroil.
+          <br class="mb-1" />
+          <b>3.</b> Add 1/4th of a vitamin C effervescent tablet to the mixture
+          and let the magic begin!
+          <br class="mb-1" />
+          <b>4.</b> make the room dark and but a flashlight under the bottle for
+          a more beautiful effect.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {% endblock %}
+  <!--https://www.mcgill.ca/oss/article/did-you-know/luminescent-chemistry-lava-lamps
+https://www.ladylemonade.nl/lavalamp-maken
+
+ -->
+</div>
