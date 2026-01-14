@@ -1,1 +1,164 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="container-fluid p-0">
+  <div class="container p-0">
+    <img
+      src="../static/img/essential oil.jpg"
+      class="img-fluid w-100"
+      alt="oil"
+      style="height: 25vh; object-fit: cover"
+    />
+
+    <h1
+      style="
+        text-align: center;
+        font-family: serif;
+        background-color: lavender;
+        color: black;
+      "
+    >
+      Essential oil
+    </h1>
+  </div>
+</div>
+<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<div class="container mt-4 position-sticky">
+  <div class="row">
+    <div class="col-6 col-md-4" style="background-color: lavender">
+      <p style="text-align: center">&#9202; 5hrs</p>
+
+      <h2
+        style="
+          text-align: center;
+          font-family: serif;
+          text-decoration: underline;
+          text-underline-offset: 10px;
+          text-decoration-thickness: 1 px;
+        "
+      >
+        Ingrediënts
+      </h2>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          Herbs or flowers
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          Distilled water
+        </label>
+      </div>
+
+      <h4
+        class="mt-4"
+        style="
+          text-align: center;
+          font-family: serif;
+          text-decoration: underline;
+          text-underline-offset: 10px;
+          text-decoration-thickness: 1 px;
+        "
+      >
+        Equipment
+      </h4>
+
+      <div class="form-check gap-3">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          crockpot or pan
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          Small brown tincture
+        </label>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <h4><b> What is essential oil? </b></h4>
+      <p>
+        Essential oils come from a plant which is the oil, fragrance or essense
+        of a plant. Essential oil is concentrated, hydrophobic liquid extracted
+        from plant material. Most of the time essential oil is extracted with
+        steam destillation. Different processes can be used like solvent
+        extraction, coldpressing (mechanical pressure), sfumatura (extraction
+        with sponges). This experiment wil focus on extraction with water and
+        the essential oil.
+      </p>
+
+      <h4><b> Scientific explanation </b></h4>
+      <p>
+        Boiling the plant in water helps releasing the aromatic and oil-soluble
+        components. The oil will flow at the top. The oil will turn solid
+        because it has a lower melting point than water. The oil can be
+        transferred to a container where it will met again at roomtemperature.
+      </p>
+
+      <img
+        src="../static/img/stoomdestillatie.jpg"
+        class="img-fluid science-img"
+        alt="destillation"
+      />
+
+      <h4 class="mt-2"><b> Instructions </b></h4>
+      <p class="p-0">
+        <b>1.</b> Cut the plant in smaller pieces.
+        <br class="mb-1" />
+        <b>2.</b> Put the plant inside a crockpot until it's about half full .
+        <br class="mb-1" />
+        <b>3.</b> Fill crockpot with distilled water until it has covered the
+        plants.
+        <br class="mb-1" />
+        <b>4.</b> Put the lid upside down back so condense and steam fall back
+        into the crockpot.
+        <br class="mb-1" />
+        <b>5.</b> Put crockpot on high until water is hot and turn it to low
+        <br class="mb-1" />
+        <b> 6. </b> Simmer on low for 3-4 hours.
+        <br class="mb-1" />
+        <b> 7. </b> Let the solution cool down to roomtemperature.
+        <br class="mb-1" />
+        <b> 8. </b> Let it cool overnight in the fridge. A film of essential oil
+        will form on the top hardened.
+        <br class="mb-1" />
+        <b> 9. </b> Scoop up the hardened oil quickly before it melts and store
+        in a brown colored glass container.
+        <br class="mb-1" />
+      </p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
 <!--https://www.youtube.com/watch?v=LCZcoeKeyGA-->
