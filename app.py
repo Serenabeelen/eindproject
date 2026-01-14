@@ -1,13 +1,11 @@
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
-import os
 
 app = Flask(__name__)
-
-basedir = os.path.abspath(os.path.dirname(__file__))
+app.debug= True
 
 #configure SQlite database
-app.config["SQLALCHEMY_DATABASE_URI"] ="sqlite:///" + os.path.join(basedir, "contactform.db")
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///contactform.db"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False #avoids a warning 
 
 #creates SQLALchemy instance 
@@ -20,7 +18,11 @@ class Contact(db.Model):
   last_name = db.Column(db.String(20), unique=False, nullable=False )
   email = db.Column(db.String(50), unique=False, nullable=False )
   message = db.Column(db.String(300), unique=False, nullable=False )
-  category = db.Column(db.String(20), unique=False, nullable=False )
+  category = db.Column(db.String(30), unique=False, nullable=False )
+
+  def __repr__(self):
+    return f"<Contact : {self.first_name,} {self.last_name}>"
+
 
 @app.route("/")
 def index():
