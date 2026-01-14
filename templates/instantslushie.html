@@ -1,6 +1,123 @@
-{% extends "base.html" %} 
+{% extends "base.html" %} {% block content %}
 
-{% block content %}
+<div class="container-fluid p-0">
+  <div class="container p-0">
+    <img
+      src="../static/img/slushie.jpg"
+      class="img-fluid w-100"
+      alt="slushie"
+      style="height: 25vh; object-fit: cover"
+    />
 
+    <h1
+      style="
+        text-align: center;
+        font-family: serif;
+        background-color: lavender;
+        color: black;
+      "
+    >
+      Slushie
+    </h1>
+  </div>
+</div>
+<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-6 col-md-4" style="background-color: lavender">
+      <p style="text-align: center">&#9202; 3 hours and 15 minutes</p>
+
+      <h2
+        style="
+          text-align: center;
+          font-family: serif;
+          text-decoration: underline;
+          text-underline-offset: 10px;
+          text-decoration-thickness: 1 px;
+        "
+      >
+        Ingrediënts
+      </h2>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked">
+          500 ml Bottle of fizzy soda
+        </label>
+      </div>
+
+      <h4
+        class="mt-4"
+        style="
+          text-align: center;
+          font-family: serif;
+          text-decoration: underline;
+          text-underline-offset: 10px;
+          text-decoration-thickness: 1 px;
+        "
+      >
+        Equipment
+      </h4>
+
+      <div class="form-check gap-3">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="checkChecked"
+          checked
+        />
+        <label class="form-check-label" for="checkChecked"> Freezer </label>
+      </div>
+
+      <img src="../static/img/science gif.gif" class="img-fluid" alt="gif" />
+    </div>
+
+    <div class="col-md-8">
+      <h4><b> Instant slushie without a slushiemachine </b></h4>
+      <p>
+        Do you have patience and do you like to have a cold beverage? This
+        experiment will show you an easy way to make a slushie without expensive
+        equipment. The only things required are a freezer and a bottle of your
+        favorite fizzy soda.
+      </p>
+
+      <h4><b> Scientific explanation </b></h4>
+      <p>
+        When you cool the bottle of soda in the freezer the soda is chilled
+        below its freezing point without turning into ice. The reason why is it
+        is because soda is a mixture of carbondioxide, sugar and water. The
+        carbon dioxide interferes with the ice forming. When you open the bottle
+        after freezing the pressure drops and the bubbles release. Creating a
+        surface for the ice to form inside the bottle.
+      </p>
+      <img
+        src="../static/img/instant soda slush.jpg"
+        class="img-fluid science-img"
+        alt="reaction"
+      />
+
+      <h4 class="mt-4"><b> Instructions </b></h4>
+      <p class="p-0">
+        <b>1.</b> Shake your room temperature bottle of soda heavily.
+        <br class="mb-1" />
+        <b>2.</b> Put the bottle in the freezer for 3 hours and 15 minutes.
+        <br class="mb-1" />
+        <b>3.</b> Take the bottle out of the freezer, release the air, tighten
+        the cap and see the soda turn into an instant slushie.
+        <br class="mb-1" />
+        <b>4.</b> Enjoy your treat!
+      </p>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
+
+<!-- https://www.youtube.com/shorts/oNLGIMSD61A -->
