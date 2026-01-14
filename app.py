@@ -47,9 +47,13 @@ def contact_page():
     db.session.add(new_contact)
     db.session.commit()
 
-    return redirect(url_for("index"))
+    return redirect(url_for("submit"))
   
   return render_template("contact.html")
+
+@app.route("/submit")
+def submit():
+  return render_template("submit.html")
 
 
 
