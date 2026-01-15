@@ -28,9 +28,9 @@
   <body>
 
     <div class="container">
-      <nav class="navbar navbar-expand-sm bg-light navbar-light">
+      <nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="{{url_for('index')}}">
             <img src="../static/img/favicon.png" alt="logo" style="width: 40px;" class="rounded-pill">
             DIY Chemistry at home
           </a>
@@ -41,10 +41,7 @@
         
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="{{url_for('index')}}">Home</a>
-              </li>
-
+              
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="navbarDropdown">
                   Experiments 
