@@ -1,71 +1,95 @@
 {% extends "base.html" %} {% block content %}
-<div class="container-sm mt-4">
-  <form method="POST" action="/contact">
-    <div class="form-group mb-3">
-      <label for="first_name"> First Name </label>
-      <input
-        type="text"
-        class="form-control"
-        name="first_name"
-        id="first_name"
-        placeholder="Enter first name here"
-        required
-      />
-    </div>
 
-    <div class="form-group mb-3">
-      <label for="last_name"> Last Name </label>
-      <input
-        type="text"
-        class="form-control"
-        name="last_name"
-        id="last_name"
-        placeholder="Enter
+<div class="container ">
+  <div class="row">
+    <div class="col-sm-4 d-flex flex-column rounded-4 mt-1" style="background-color: lavender;">
+      <h1>Contact</h1>
+      <p>
+        We are there for you, if you have any questions or comments let us know!
+        <br class="mb-3" />
+
+        <b>Email: </b> contact.diychemistry@python.com <br class="mb-3" />
+        <b>WhatsApp: </b> +31 6 1234568 <br class="mb-3" />
+
+        <h1> Call us </h1>
+        We are available from 9.00 till 17:30, monday to friday.  <br class="mb-3" />
+        
+        <span style="white-space: nowrap"> &#128382; <a href=" +31 6 1234568 "  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover fs-6 text-dark link-underline-dark" > +31 6 1234568  </a> </span> <br class="mb-1">
+         <span style="white-space: nowrap"> &#128382; <a href=" +31 6 1234555 "  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover fs-6 text-dark link-underline-dark" >  +31 6 1234555   </a></span> </a> 
+
+      </p>
+    </div>
+    <div class="col-sm-8 rounded-4" style="background-color: whitesmoke;">
+      <div class="container-sm mt-4">
+        <form method="POST" action="/contact">
+          <div class="form-group mb-3">
+            <label for="first_name"> First Name </label>
+            <input
+              type="text"
+              class="form-control"
+              name="first_name"
+              id="first_name"
+              placeholder="Enter first name here"
+              required
+            />
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="last_name"> Last Name </label>
+            <input
+              type="text"
+              class="form-control"
+              name="last_name"
+              id="last_name"
+              placeholder="Enter
     Last name here"
-      />
-    </div>
+            />
+          </div>
 
-    <div class="form-group mb-3">
-      <label for="email"> Email Address</label>
-      <input
-        type="email"
-        class="form-control"
-        name="email"
-        id="email"
-        placeholder="Enter
+          <div class="form-group mb-3">
+            <label for="email"> Email Address</label>
+            <input
+              type="email"
+              class="form-control"
+              name="email"
+              id="email"
+              placeholder="Enter
     Email here"
-        required
-      />
-    </div>
+              required
+            />
+          </div>
 
-    <div class="form-group mb-3">
-      <label for="category">
-        Choose option at what message you want to send
-      </label>
-      <select class="form-control" id="category" name="category" required>
-        <option value="" disabled selected>Select option</option>
-        <option value="experiment">New Experiment Idea</option>
-        <option value="feedback">Feedback</option>
-        <option value="complaint">Complaint</option>
-        <option value="other">Other</option>
-      </select>
-    </div>
+          <div class="form-group mb-3">
+            <label for="category">
+              Choose option at what message you want to send
+            </label>
+            <select class="form-control" id="category" name="category" required>
+              <option value="" disabled selected>Select option</option>
+              <option value="experiment">New Experiment Idea</option>
+              <option value="feedback">Feedback</option>
+              <option value="complaint">Complaint</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
 
-    <div class="form-group mb-3">
-      <label for="message"> Message </label>
-      <textarea
-        class="form-control"
-        name="message"
-        id="message"
-        rows="4"
-        required
-      ></textarea>
-    </div>
+          <div class="form-group mb-3">
+            <label for="message"> Message </label>
+            <textarea
+              class="form-control"
+              name="message"
+              id="message"
+              rows="4"
+              required
+            ></textarea>
+          </div>
 
-    <div class="d-grid">
-      <input type="submit" class="btn btn-info" value="Submit" />
+          <div class="d-grid mb-4" > 
+            <input type="submit" class="btn btn-info" value="Submit" />
+          </div>
+        </form>
+      </div>
     </div>
-  </form>
+  </div>
+
+  {% endblock %}
 </div>
-
-{% endblock %}

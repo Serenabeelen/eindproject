@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for 
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
@@ -151,6 +151,20 @@ def facemask():
 @app.route("/essentialoil")
 def essentialoil():
   return render_template("essentialoil.html")
+
+@app.route("/login")
+def login():
+  return render_template("login.html")
+
+
+
+@app.route("/aboutus")
+def aboutus():
+  return render_template("aboutus.html")
+
+
+
+
 
 if __name__=="__main__":
   with app.app_context(): #needed for DB operations 

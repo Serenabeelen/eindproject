@@ -1,41 +1,114 @@
 {% extends "base.html" %} {% block content %}
 
-<h1> Welcome to DIY Chemistry at home</h1>
+<h1>Welcome to DIY Chemistry at home</h1>
 
-  <p> Are you ready to delve into the depths of simple chemistry? Look no further than DIY Chemistry, where you can take pride in making your stuff at home. There are three categories you can choose from. Each category has it's own fun experiments. 
-     If you want to contact us, simply fill in the contact form. </p>
+<p>
+  Are you ready to delve into the depths of simple chemistry? Look no further
+  than DIY Chemistry, where you can take pride in making your stuff at home.
+  There are three categories you can choose from. Each category has it's own fun
+  experiments. If you want to contact us, simply fill in the contact form.
+</p>
 
 <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
   <!-- Indicators/dots -->
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button
+      type="button"
+      data-bs-target="#demo"
+      data-bs-slide-to="0"
+      class="active"
+    ></button>
     <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
     <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
   </div>
-  
+
   <!-- The slideshow/carousel -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../static/img/c1.jpg" alt="c1" class="d-block" style="width:100%">
+      <img
+        src="../static/img/c1.jpg"
+        alt="c1"
+        class="d-block"
+        style="width: 100%"
+      />
     </div>
     <div class="carousel-item">
-      <img src="../static/img/c2.png" alt="c2" class="d-block" style="width:100%">
+      <img
+        src="../static/img/c2.png"
+        alt="c2"
+        class="d-block"
+        style="width: 100%"
+      />
     </div>
     <div class="carousel-item">
-      <img src="../static/img/c3.webp" alt="c3" class="d-block" style="width:100%">
+      <img
+        src="../static/img/c3.webp"
+        alt="c3"
+        class="d-block"
+        style="width: 100%"
+      />
     </div>
   </div>
-  
+
   <!-- Left and right controls/icons -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#demo"
+    data-bs-slide="prev"
+  >
     <span class="carousel-control-prev-icon"></span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#demo"
+    data-bs-slide="next"
+  >
     <span class="carousel-control-next-icon"></span>
   </button>
 </div>
 
+
+<div class="container text-center">
+  <h1>Our services</h1>
+  <div class="row row-cols-1 row-cols-md-3 mt-4 d-flex justify-content-center">
+    <div class="col d-flex justify-content-center">
+      <div class="card" style="width: 18rem; height: 18rem">
+        <img src="../static/img/fun pic.jpg" class="card-img-top" alt="fun" />
+        <div class="card-body">
+          <p class="card-text"><b>Fun for anyone no matter the age </b></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem; height: 18rem">
+        <img
+          src="../static/img/kwaliteit.webp"
+          class="card-img-top"
+          alt="kwaliteit"
+        />
+        <div class="card-body">
+          <p class="card-text">
+            <b>Quality for the envoirement and yourself </b>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem; height: 18rem">
+        <img
+          src="../static/img/veiligheid.jpg"
+          class="card-img-top"
+          alt="safetu."
+        />
+        <div class="card-body">
+          <p class="card-text"><b>Safety goes first </b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- 
 https://www.w3schools.com/bootstrap5/bootstrap_carousel.php
