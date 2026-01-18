@@ -69,49 +69,59 @@
   </button>
 </div>
 
+<!--Cards Our Services -->
 
-<div class="container text-center">
-  <h1>Our services</h1>
-  <div class="row row-cols-1 row-cols-md-3 mt-4 d-flex justify-content-center">
-    <div class="col d-flex justify-content-center">
-      <div class="card" style="width: 18rem; height: 18rem">
-        <img src="../static/img/fun pic.jpg" class="card-img-top" alt="fun" />
-        <div class="card-body">
-          <p class="card-text"><b>Fun for anyone no matter the age </b></p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card" style="width: 18rem; height: 18rem">
-        <img
-          src="../static/img/kwaliteit.webp"
-          class="card-img-top"
-          alt="kwaliteit"
-        />
-        <div class="card-body">
-          <p class="card-text">
-            <b>Quality for the envoirement and yourself </b>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card" style="width: 18rem; height: 18rem">
-        <img
-          src="../static/img/veiligheid.jpg"
-          class="card-img-top"
-          alt="safetu."
-        />
-        <div class="card-body">
-          <p class="card-text"><b>Safety goes first </b></p>
-        </div>
+<div class="row row-cols-1 row-cols-md3 g-3 mt-4 text-center">
+  <h1> Our services </h1>
+  <div class="col-sm-4 d-flex align-items-stretch">
+    
+    <div class="card h-100 d-flex flex-column w-100">
+      <img
+        src="../static/img/veiligheid.jpg"
+        alt="veiligheid "
+        class="card-img-top"
+      />
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title fw-bold">Safety goes first </h5>
+       
       </div>
     </div>
   </div>
-</div>
 
-<!-- 
+  
+    <div class="col-sm-4 d-flex align-items-stretch">
+      <div class="card h-100 d-flex flex-column w-100">
+        <img
+          src="../static/img/kwaliteit.webp"
+          alt="Elephanttoothpaste"
+          class="card-img-top"
+        />
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title fw-bold ">Quality for the envoirement and yourself</h5>
+                
+      
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 d-flex align-items-stretch">
+      <div class="card h-100 d-flex flex-column w-100">
+        <img
+          src="../static/img/fun pic.jpg"
+          alt="Elephanttoothpaste"
+          class="card-img-top"
+        />
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title fw-bold">Fun for anyone, no matter the age</h5>
+        </div>
+      </div>
+    </div>
+
+   
+    <!-- 
 https://www.w3schools.com/bootstrap5/bootstrap_carousel.php
 -->
 
-{% endblock %}
+    {% endblock %}
+  </div>
+</div>
