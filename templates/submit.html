@@ -4,6 +4,33 @@
   <h1>Thank you for your message we will look at it!</h1>
 
   <img src="../static/img/submit pic.htm" class="img-fluid" alt="xxx" />
+
+  <h1>Last send messages from people</h1>
+
+  <div class="row justify-content-center">
+    {% for contact in contacts %}
+
+    <div class="col-md-4 col-sm-6 mb-3">
+      <div class="card h-100 " style="background-color: lavender;">
+        <img src="../static/img/randomperson.jpg">
+        <div class="card-body">
+          <h5 class="card-title"> 
+            <b> Message </b> {{contact.id}}</h5>   
+          </h5>
+        
+          <h6 class="card-subtitle mb-2 ">
+            <b>Name</b> {{contact.first_name}} <br class="mb-2"/>
+            <b>Category: </b> {{ contact.category}}
+          </h6>
+
+          <p class="card-text">{{ contact.message }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
 </div>
+
 
 {% endblock %}

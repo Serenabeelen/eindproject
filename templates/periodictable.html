@@ -1,0 +1,81 @@
+{% extends "base.html" %} {% block content %}
+
+<img
+  src="../static/img/periodic table.png"
+  class="img-fluid"
+  alt="periodictable"
+/>
+
+<div class="row">
+  
+  <div class="col-sm d-flex align-items-center justify-content-center " >
+    <form method="POST">
+      <h4 class="mb-3"> Enter Element </h4>
+      <input 
+        type="text"
+        class="form-control"
+        name="elementsearch"
+        placeholder="Na, K, He, Au..."/>
+    <button type="submit" class="btn btn-primary mt-3"> Search </button>
+      
+
+  </div>
+ 
+  <div class="col-sm ">
+
+    <h4>Element info</h4>
+    
+    {% if elementsearch %}
+      {%set found = false %}
+      {% for element in elements %}
+        {% if elementsearch|lower == element.symbol|lower %}
+      
+        <div class="table-responsive mt-3 "> 
+          <table class=" table table-bordered  text-center ">
+           
+            <tbody class="table-group-divider ">
+              <tr>
+      
+                <td> <b> Symbol </b> </td>
+                <td><b> Atomic number </b> </td>
+                <td><b> Atomic weight (u)</td>
+                <td> <b> Valence electrons </b> </td>
+                <td>  <b> Boiling point (K) </b> </td>
+                <td>  <b> Melting point (K) </b> </td>
+              </tr>
+
+              <tr>
+      
+                  <td> {{element.symbol}}  </td>
+                  <td> {{element.atomic}} </td>
+                  <td>  {{element.weight}} </td>
+                  <td> {{element.valence}}</td>
+                  <td>{{element.boil}}</td>
+                  <td>{{element.melt}}</td>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+          {%set found = true%}
+        {%endif%} 
+      {%endfor%}
+
+      <!--Can't get this to work idk??? Does not interfere with the rest of the  code-->
+        {%elif elementsearch %}
+          <p>Element does not exist</p>
+        {%endif%} 
+  
+  </div>
+  
+
+</div>
+{% endblock %}
+
+<!--https://stackoverflow.com/questions/66695876/how-use-a-conditional-statement-in-a-flask-app
+
+https://www.geeksforgeeks.org/python/flask-http-methods-handle-get-post-requests/
+https://jinja.palletsprojects.com/en/stable/templates/#list-of-control-structures
+https://getbootstrap.com/docs/5.3/content/tables/
+-->
+
